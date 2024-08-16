@@ -142,13 +142,16 @@ table td:nth-child(3){
     width: 15vw;
 }
 table td:nth-child(4){
-    width: 25vw;
+    width: 15vw;
 }
 table td:nth-child(5){
     width: 10vw;
 }
 table td:nth-child(6){
-    width: 1vw;
+    width: 15vw;
+}
+table tr:not(:first-of-type) td:nth-child(6) div{
+    display: none;
 }
 table tr:nth-child(1) td{
     font-weight: bold;
@@ -157,6 +160,9 @@ table tr:nth-child(1) td{
 table tr:not(:first-of-type):hover td{
     border-top: 3px #eb8d8d solid;
     border-bottom: 3px #eb8d8d solid;
+}
+table tr:not(:first-of-type):hover td:nth-child(6) div{
+    display: initial;
 }
 table tr:not(:first-of-type):hover td:first-of-type{
     border-left: 3px #eb8d8d solid;
